@@ -82,6 +82,11 @@
 		gap: 16px;
 	}
 
+	.right-btn,
+	.left-btn {
+		cursor: pointer;
+	}
+
 	.slider {
 		position: relative;
 		overflow: hidden;
