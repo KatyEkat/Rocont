@@ -1,0 +1,122 @@
+@media (min-width: 960px) {
+	.underline {
+		display: none;
+	}
+
+	.footer-qa-block {
+		gap: 16px 32px;
+	}
+
+	.footer-mob {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.footer-mob {
+		padding: 32px 22px 32px 10px;
+	}
+
+	.logo-mob {
+		display: none;
+	}
+
+	.logo-desc {
+		display: flex;
+	}
+
+	.footer-contacts-desc {
+		display: flex;
+		flex-direction: row-reverse;
+		gap: 32px;
+	}
+
+	.contacts-map {
+		height: 359px;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: row;
+		gap: 8px;
+	}
+
+	.form__submit {
+		width: 181px;
+		height: 52px;
+	}
+
+	.form-inputs {
+		flex-direction: column;
+	}
+
+	.form-block {
+		display: flex;
+		gap: 48px;
+		padding: 48px 96px 48px 48px;
+	}
+
+	.form__checkbox-label {
+		gap: 11px;
+		margin-top: 8px;
+	}
+
+	.form__submit {
+		margin-top: 16px;
+	}
+
+	.form-data-block {
+		width: 100%;
+	}
+
+	.form-block-left {
+		width: 100%;
+	}
+
+	.slider-card {
+		height: 350px;
+		width: 250px;
+	}
+
+	.slider-buttons {
+		display: flex;
+		gap: 16px;
+	}
+
+	.slider {
+		position: relative;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	.slider-track {
+		display: flex;
+		transition: transform 0.4s ease-in-out;
+	}
+
+	.slider-content-block {
+		display: none;
+	}
+
+	.slider-card:first-child .slider-content-block {
+		display: flex;
+	}
+
+	.contacts-heading {
+		width: 232px;
+	}
+
+	.slider-left-block-desctop {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.slider-block {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.slider-card:not(:first-child) .slider-content-block {
+		display: none;
+	}
+}

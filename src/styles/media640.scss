@@ -1,0 +1,138 @@
+@media (min-width: 768px) {
+	.header__burger {
+		display: none;
+	}
+
+	.header-nav {
+		display: block;
+	}
+
+	.header-nav-mobile {
+		display: none;
+	}
+
+	.slider-card {
+		height: 320px;
+		width: 250px;
+	}
+
+	.main-sertificate {
+		color: rgb(255, 255, 255);
+	}
+
+	.main-block-480 {
+		display: none;
+	}
+
+	.main-block-640 {
+		display: block;
+	}
+
+	.main-left-block {
+	}
+
+	.main-img-480 {
+		display: flex;
+	}
+
+	.main-header-640 {
+		color: rgb(255, 255, 255);
+		width: 245px;
+		font-size: 32px;
+	}
+
+	.main-block-640 {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		border-radius: 24px;
+
+		height: 331px;
+	}
+
+	.main-img-640 {
+		background-image: url(../img/mainLady640.png);
+		background-size: cover;
+		background-position: center;
+		z-index: 0;
+		width: 100%;
+		height: -webkit-fill-available;
+	}
+
+	.try-button-desctop {
+		color: rgb(255, 255, 255);
+		font-family: "Gropled";
+		font-size: clamp(1rem, 0.9671rem + 0.1754vw, 1.125rem);
+		font-weight: 700;
+		line-height: 110%;
+		letter-spacing: 0%;
+		text-align: left;
+
+		width: 100%;
+		height: 52px;
+
+		border: unset;
+		text-decoration: none;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 16px;
+
+		border-radius: 40px;
+		background: rgb(31, 139, 72);
+	}
+
+	.try-button-desctop:hover {
+		background: rgb(36 165 85);
+		transition: 0.2s;
+	}
+
+	.main-description-640 {
+		color: rgb(46, 45, 43);
+		font-family: "Tilda";
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 120%;
+		letter-spacing: -3%;
+		text-align: left;
+	}
+
+	.main-description,
+	.main-sertificate,
+	.main-description,
+	.try-button {
+		display: none;
+	}
+
+	.main-left-block,
+	.main-right-block {
+		width: 100%;
+	}
+
+	.main-left-block {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.main-sertificate-640 {
+		color: rgb(255, 255, 255);
+		font-family: "Tilda";
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 100%;
+		letter-spacing: -2%;
+		text-align: center;
+		width: 182px;
+	}
+
+	.main-content-block-desc {
+		position: absolute;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+}

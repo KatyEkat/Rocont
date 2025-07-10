@@ -1,0 +1,725 @@
+@import "./styles/fonts.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("./img/TopographicBGR.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	min-height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+	// background: rgb(246, 246, 246);
+}
+
+// .header {
+// 	padding: 16px;
+// 	background: transparent;
+
+// 	&__container {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		align-items: center;
+// 	}
+
+// 	&-nav {
+// 		display: none;
+
+// 		&-mobile {
+// 			display: none;
+// 		}
+// 	}
+
+// 	&__burger {
+// 		display: flex;
+// 		flex-direction: column;
+// 		justify-content: space-between;
+// 		width: 24px;
+// 		height: 18px;
+// 		background: none;
+// 		border: none;
+// 		cursor: pointer;
+
+// 		span {
+// 			height: 2px;
+// 			background: #000;
+// 			width: 100%;
+// 		}
+// 	}
+// }
+
+// .nav--visible {
+// 	display: block !important;
+// }
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 17px 24px;
+}
+
+.header-top-bl {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+}
+
+.burger-btn {
+	background: unset;
+	border: none;
+	cursor: pointer;
+}
+
+.burger-menu {
+	display: none;
+	justify-content: space-between;
+	width: 100%;
+	height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 55px;
+	background: rgb(242, 242, 254);
+
+	transition: opacity 0.2s ease, visibility 0.2s ease;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.burger-menu.show-items {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.burger-block {
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+}
+
+.burger-items {
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+}
+
+.burger-item {
+	color: rgb(53, 41, 88);
+	font-family: "Panton";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: center;
+	background: unset;
+	border: unset;
+	text-decoration: none;
+}
+
+.header-desc {
+	display: none;
+}
+
+.burger-items-hidden {
+	display: none;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.show-items {
+	display: flex;
+}
+
+.active {
+	color: rgb(53, 41, 88);
+	font-family: "Panton";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+}
+
+.burger-submenu {
+	display: flex;
+	gap: 15px;
+	flex-direction: column;
+}
+
+.header-contacts-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header-contacts-miniblock {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.contacts-item-mob {
+	color: rgb(53, 41, 88);
+	font-family: "Panton";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 150%;
+	text-decoration: none;
+}
+
+//////////////////////////////////////////////////////////////
+///
+
+.main {
+	padding: 64px 10px 0 10px;
+}
+
+.main-block {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.main-img-phone {
+	display: flex;
+}
+
+.main-header,
+.main-header-480,
+.main-header-640 {
+	color: rgb(46, 45, 43);
+	font-family: "Gropled";
+	font-size: clamp(2rem, 1.4737rem + 2.807vw, 4rem);
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.main-description {
+	color: rgb(46, 45, 43);
+	font-family: "Tilda";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 120%;
+	letter-spacing: -3%;
+	text-align: left;
+}
+
+.try-button {
+	color: rgb(255, 255, 255);
+	font-family: "Gropled";
+	font-size: clamp(1rem, 0.9671rem + 0.1754vw, 1.125rem);
+	font-weight: 700;
+	line-height: 110%;
+	letter-spacing: 0%;
+	text-align: left;
+
+	width: 100%;
+	height: 52px;
+
+	border: unset;
+	text-decoration: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px;
+
+	border-radius: 40px;
+	background: rgb(31, 139, 72);
+}
+
+.try-button:hover {
+	background: rgb(36 165 85);
+	transition: 0.2s;
+}
+
+.main-sertificate {
+	color: rgb(46, 45, 43);
+	font-family: "Tilda";
+	font-size: clamp(0.75rem, 0.6842rem + 0.3509vw, 1rem);
+	font-weight: 400;
+	line-height: 100%;
+	letter-spacing: -2%;
+	text-align: center;
+}
+
+.main-img-480{
+    display: none;
+}
+
+.main-block-480{
+    display: none;
+}
+
+.main-block-640{
+    display: none;
+}
+
+// .main-text-block {
+// 	display: flex;
+// 	flex-direction: column;
+// 	gap: 24px;
+// }
+
+//////////////////////////////////////////////////////////////
+///
+
+.slider {
+	padding: 64px 10px 0 10px;
+	overflow: hidden;
+}
+
+.slider-content-block {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.slider-card {
+	position: relative;
+	border-radius: 16px;
+	overflow: hidden;
+
+	display: flex;
+	align-items: flex-end;
+	padding: 24px;
+
+	min-width: 250px;
+	height: 280px;
+
+	color: #fff;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
+
+	background-image: linear-gradient(
+		180deg,
+		rgba(31, 139, 72, 0) 31.304%,
+		rgba(31, 139, 72, 1) 100%
+	);
+}
+
+.slider-card--lady {
+	background-image: linear-gradient(
+			180deg,
+			rgba(31, 139, 72, 0) 31.304%,
+			rgba(31, 139, 72, 1) 100%
+		),
+		url("./img/lady.png");
+}
+
+.slider-card--eye {
+	background-image: linear-gradient(
+			180deg,
+			rgba(31, 139, 72, 0) 31.304%,
+			rgba(31, 139, 72, 1) 100%
+		),
+		url("./img/eye.png");
+}
+
+.slider-card--neck {
+	background-image: linear-gradient(
+			180deg,
+			rgba(31, 139, 72, 0) 31.304%,
+			rgba(31, 139, 72, 1) 100%
+		),
+		url("./img/neck.png");
+}
+
+.slider-card--eye-face {
+	background-image: linear-gradient(
+			180deg,
+			rgba(31, 139, 72, 0) 31.304%,
+			rgba(31, 139, 72, 1) 100%
+		),
+		url("./img/eyeFace.png");
+}
+
+.slder-heading {
+	color: rgb(255, 255, 255);
+	font-family: "Gropled";
+	font-size: clamp(1.25rem, 1.1842rem + 0.3509vw, 1.5rem);
+	font-weight: 700;
+	line-height: 100%;
+	text-align: left;
+}
+
+.slider-description {
+	color: rgb(255, 255, 255);
+	font-family: "Tilda";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+	letter-spacing: -2%;
+	text-align: left;
+}
+
+.slider-buttons {
+	display: none;
+}
+
+.slider-track {
+	display: flex;
+	gap: 8px;
+
+	transition: transform 0.4s ease-in-out;
+}
+
+.slider-block {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.form {
+	padding: 64px 10px 0 10px;
+}
+
+.form-block {
+	border-radius: 16px;
+	background: rgb(31, 139, 72);
+	padding: 24px;
+}
+
+.form-minblock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.form-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.form-heading {
+	color: rgb(255, 255, 255);
+	font-family: "Gropled";
+	font-size: clamp(1.75rem, 1.5526rem + 1.0526vw, 2.5rem);
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: left;
+	margin-bottom: 24px;
+
+	max-width: 337px;
+}
+
+.form-description {
+	color: rgb(255, 255, 255);
+	font-family: "Tilda";
+	font-size: clamp(1.125rem, 1.0757rem + 0.2632vw, 1.3125rem);
+	font-weight: 500;
+	line-height: 120%;
+	letter-spacing: -3%;
+	text-align: left;
+	text-decoration: none;
+}
+
+.form-data-block {
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	border: 0;
+}
+
+.form__fieldset {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	border: none;
+}
+
+.form__input {
+	border-radius: 40px;
+	background: rgb(255, 255, 255);
+	padding: 8px 20px;
+
+	color: rgb(46, 45, 43);
+	font-family: "Tilda";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+	letter-spacing: -2%;
+	text-align: left;
+	border: unset;
+	width: 100%;
+}
+
+.form__input:focus-visible {
+	outline: unset;
+}
+
+.form__checkbox-text {
+	color: rgb(255, 255, 255);
+	font-family: "Tilda";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 100%;
+	letter-spacing: -2%;
+	text-align: left;
+}
+
+.form__checkbox-label {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.form__custom-checkbox {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+
+	.checkbox-bg {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.checkbox-checkmark {
+		position: absolute;
+		top: 4px;
+		left: 6px;
+		width: 11px;
+		height: 9px;
+		opacity: 0;
+		transform: scale(0.8);
+		transition: opacity 0.2s ease, transform 0.2s ease;
+	}
+}
+
+.form__checkbox:checked + .form__custom-checkbox .checkbox-checkmark {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.form__submit {
+	color: rgb(46, 45, 43);
+	font-family: "Gropled";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 110%;
+	display: flex;
+	justify-content: space-between;
+
+	padding: 16px;
+	border-radius: 40px;
+	background: rgb(255, 255, 255);
+	border: unset;
+	cursor: pointer;
+	margin-top: 24px;
+}
+
+.form-success {
+	color: rgb(46, 45, 43);
+	font-family: "Gropled";
+	font-size: clamp(1.75rem, 1.5526rem + 1.0526vw, 2.5rem);
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.form-popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	color: black;
+	padding: 20px 40px;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	font-family: "Tilda";
+	font-size: 18px;
+	z-index: 1000;
+	display: none;
+	animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate(-50%, -60%);
+	}
+	to {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.form-inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 8px;
+	padding: 64px 10px 0 10px;
+}
+
+.info-contacts-block {
+	border-radius: 16px;
+	background: rgb(255, 255, 255);
+
+	gap: 24px;
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	width: 100%;
+
+	box-shadow: 2px -1px 20px #c0c0c0;
+}
+
+.contacts-heading {
+	color: rgb(46, 45, 43);
+	font-family: "Gropled";
+	font-size: clamp(1.75rem, 1.5526rem + 1.0526vw, 2.5rem);
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.contacts-minblock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.contact-item {
+	display: flex;
+	gap: 8px;
+}
+
+.contact-img {
+}
+
+.contacts-description {
+	color: rgb(46, 45, 43);
+	font-family: "Tilda";
+	font-size: clamp(1.125rem, 1.0757rem + 0.2632vw, 1.3125rem);
+	font-weight: 500;
+	line-height: 120%;
+	letter-spacing: -3%;
+	text-align: left;
+	text-decoration: none;
+}
+
+.contact-button {
+	display: flex;
+	justify-content: space-between;
+	gap: 8px;
+	align-items: center;
+	padding: 16px;
+	border-radius: 40px;
+	background: rgb(31, 139, 72);
+	border: unset;
+	color: rgb(255, 255, 255);
+	font-family: "Gropled";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 110%;
+	text-align: left;
+	cursor: pointer;
+}
+
+.contact-button:hover {
+	background: rgb(36 165 85);
+	transition: 0.2s;
+}
+
+.contacts-map {
+	overflow: hidden;
+	width: -webkit-fill-available;
+	height: 200px;
+	border-radius: 16px;
+}
+
+.contacts-phone-numbers {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.footer-qa-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 32px;
+	padding: 0px;
+}
+
+.underline {
+	background: rgb(46, 45, 43);
+	width: 100%;
+	height: 2px;
+}
+
+.footer-politic {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 32px;
+	padding: 0px;
+}
+
+.footer-text {
+	color: rgb(46, 45, 43);
+	font-family: "Tilda";
+	font-size: clamp(1rem, 1rem + 0vw, 1rem);
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: 0%;
+	text-align: left;
+	text-decoration: none;
+}
+
+.footer-mob {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding: 32px 10px;
+}
+
+.logo-desc {
+	display: none;
+}

@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rocont</title>
+
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./styles/media480.css" />
+		<link rel="stylesheet" href="./styles/media640.css" />
+		<link rel="stylesheet" href="./styles/media960.css" />
+		<link rel="stylesheet" href="./styles/media1200.css" />
+
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US"
+			type="text/javascript"
+		></script>
+	</head>
+	<body>
+		<!-- <header class="header">
+			<div class="header__container">
+				<div class="logo">
+					<svg
+						width="130.000000"
+						height="36.000000"
+						viewBox="0 0 130 36"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<defs />
+						<path
+							id="Vector"
+							d="M54.25 9.77C49.78 9.77 46.15 13.39 46.15 17.85C46.15 22.32 49.78 25.94 54.25 25.94C58.71 25.94 62.34 22.32 62.34 17.85C62.34 13.39 58.71 9.77 54.25 9.77ZM54.25 24.31C50.68 24.31 47.78 21.42 47.78 17.85C47.78 14.29 50.68 11.39 54.25 11.39C57.81 11.39 60.71 14.29 60.71 17.85C60.71 21.42 57.81 24.31 54.25 24.31Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M88.31 9.77C83.85 9.77 80.22 13.39 80.22 17.85C80.22 22.32 83.85 25.94 88.31 25.94C92.78 25.94 96.41 22.32 96.41 17.85C96.41 13.39 92.78 9.77 88.31 9.77ZM88.31 24.31C84.75 24.31 81.85 21.42 81.85 17.85C81.85 14.29 84.75 11.39 88.31 11.39C91.88 11.39 94.78 14.29 94.78 17.85C94.78 21.42 91.88 24.31 88.31 24.31Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M76.53 10.72C73.45 9.38 69.93 10.04 67.56 12.41C64.4 15.57 64.4 20.7 67.56 23.85C69.11 25.4 71.18 26.22 73.28 26.22C74.31 26.22 75.34 26.03 76.33 25.63C76.75 25.46 76.95 24.99 76.78 24.57C76.61 24.16 76.13 23.95 75.71 24.12C73.3 25.1 70.55 24.54 68.71 22.7C66.19 20.18 66.19 16.09 68.71 13.57C70.61 11.68 73.42 11.14 75.87 12.21C76.28 12.39 76.76 12.2 76.94 11.79C77.12 11.38 76.93 10.9 76.52 10.72L76.53 10.72Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M112.27 25.12L112.27 10.58C112.27 10.13 111.91 9.77 111.46 9.77C111.01 9.77 110.64 10.13 110.64 10.58L110.64 22.47L102.27 10.12C102.08 9.83 101.7 9.7 101.36 9.8C101.02 9.91 100.79 10.22 100.79 10.58L100.79 25.13C100.79 25.58 101.15 25.94 101.6 25.94C102.05 25.94 102.42 25.58 102.42 25.13L102.42 13.23L110.79 25.58C110.82 25.63 110.86 25.67 110.9 25.71C110.92 25.73 110.94 25.74 110.95 25.75C110.98 25.78 111.01 25.8 111.05 25.82C111.07 25.83 111.09 25.84 111.1 25.85C111.14 25.87 111.19 25.88 111.23 25.89C111.24 25.9 111.26 25.91 111.27 25.91C111.33 25.92 111.39 25.93 111.45 25.93C111.52 25.93 111.59 25.92 111.66 25.9C111.67 25.89 111.69 25.89 111.71 25.88C111.78 25.86 111.85 25.83 111.9 25.79C111.91 25.79 111.91 25.78 111.91 25.78C111.95 25.75 111.99 25.72 112.02 25.69C112.04 25.67 112.06 25.65 112.08 25.62C112.09 25.6 112.11 25.58 112.13 25.56C112.14 25.54 112.15 25.52 112.17 25.49C112.18 25.47 112.19 25.45 112.2 25.42C112.22 25.4 112.22 25.37 112.23 25.34C112.24 25.32 112.24 25.3 112.25 25.27C112.26 25.22 112.27 25.17 112.27 25.12L112.27 25.12Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M129.18 9.77L117.92 9.77C117.47 9.77 117.1 10.13 117.1 10.58C117.1 11.03 117.47 11.39 117.92 11.39L122.74 11.39L122.74 25.13C122.74 25.58 123.1 25.94 123.55 25.94C124 25.94 124.37 25.58 124.37 25.13L124.37 11.39L129.18 11.39C129.63 11.39 130 11.03 130 10.58C130 10.13 129.63 9.77 129.18 9.77L129.18 9.77Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M39.91 20.1C41.91 19.32 43.34 17.39 43.34 15.12C43.34 12.17 40.93 9.77 37.98 9.77L32.67 9.77C32.22 9.77 31.85 10.14 31.85 10.58L31.85 25.13C31.85 25.58 32.22 25.95 32.67 25.95C33.12 25.95 33.48 25.58 33.48 25.13L33.48 20.47L37.98 20.47C38.05 20.47 38.12 20.46 38.19 20.46L41.85 25.86C42.01 26.1 42.27 26.22 42.53 26.22C42.69 26.22 42.85 26.18 42.98 26.08C43.36 25.83 43.45 25.33 43.2 24.95L39.92 20.11L39.91 20.1ZM33.48 11.39L37.98 11.39C40.03 11.39 41.7 13.06 41.7 15.11C41.7 17.17 40.03 18.84 37.98 18.84L33.48 18.84L33.48 11.39Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M23.18 12.86L1.35 0.12C0.75 -0.23 0 0.21 0 0.91L0 26.4C0 27.11 0.75 27.55 1.35 27.2L23.18 14.45C23.78 14.1 23.78 13.22 23.18 12.86L23.18 12.86Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M2.87 30.3L12.4 35.87C13 36.22 13.76 35.78 13.76 35.08L13.76 23.95C13.76 23.24 13 22.8 12.4 23.15L2.87 28.72C2.27 29.08 2.27 29.96 2.87 30.31L2.87 30.3Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+					</svg>
+				</div>
+
+				<nav class="header-nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#">О средстве</a></li>
+						<li class="nav__item"><a href="#">Состав</a></li>
+						<li class="nav__item"><a href="#">Вопросы</a></li>
+						<li class="nav__item"><a href="#">Отзывы</a></li>
+						<li class="nav__item"><a href="#">Попробовать</a></li>
+						<li class="nav__item"><a href="#">Для своих</a></li>
+					</ul>
+				</nav>
+
+				<button class="header__burger" aria-label="Открыть меню">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+
+			<nav class="header-nav-mobile">
+				<ul class="nav__list nav__list-burger">
+					<li class="nav__item"><a href="#">О средстве</a></li>
+					<li class="nav__item"><a href="#">Состав</a></li>
+					<li class="nav__item"><a href="#">Вопросы</a></li>
+					<li class="nav__item"><a href="#">Отзывы</a></li>
+					<li class="nav__item"><a href="#">Попробовать</a></li>
+					<li class="nav__item"><a href="#">Для своих</a></li>
+				</ul>
+			</nav>
+		</header> -->
+
+		<header>
+			<div class="header header-mob">
+				<div class="header-top-bl">
+					<div class="logo">
+						<svg
+							width="130.000000"
+							height="36.000000"
+							viewBox="0 0 130 36"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<defs />
+							<path
+								id="Vector"
+								d="M54.25 9.77C49.78 9.77 46.15 13.39 46.15 17.85C46.15 22.32 49.78 25.94 54.25 25.94C58.71 25.94 62.34 22.32 62.34 17.85C62.34 13.39 58.71 9.77 54.25 9.77ZM54.25 24.31C50.68 24.31 47.78 21.42 47.78 17.85C47.78 14.29 50.68 11.39 54.25 11.39C57.81 11.39 60.71 14.29 60.71 17.85C60.71 21.42 57.81 24.31 54.25 24.31Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M88.31 9.77C83.85 9.77 80.22 13.39 80.22 17.85C80.22 22.32 83.85 25.94 88.31 25.94C92.78 25.94 96.41 22.32 96.41 17.85C96.41 13.39 92.78 9.77 88.31 9.77ZM88.31 24.31C84.75 24.31 81.85 21.42 81.85 17.85C81.85 14.29 84.75 11.39 88.31 11.39C91.88 11.39 94.78 14.29 94.78 17.85C94.78 21.42 91.88 24.31 88.31 24.31Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M76.53 10.72C73.45 9.38 69.93 10.04 67.56 12.41C64.4 15.57 64.4 20.7 67.56 23.85C69.11 25.4 71.18 26.22 73.28 26.22C74.31 26.22 75.34 26.03 76.33 25.63C76.75 25.46 76.95 24.99 76.78 24.57C76.61 24.16 76.13 23.95 75.71 24.12C73.3 25.1 70.55 24.54 68.71 22.7C66.19 20.18 66.19 16.09 68.71 13.57C70.61 11.68 73.42 11.14 75.87 12.21C76.28 12.39 76.76 12.2 76.94 11.79C77.12 11.38 76.93 10.9 76.52 10.72L76.53 10.72Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M112.27 25.12L112.27 10.58C112.27 10.13 111.91 9.77 111.46 9.77C111.01 9.77 110.64 10.13 110.64 10.58L110.64 22.47L102.27 10.12C102.08 9.83 101.7 9.7 101.36 9.8C101.02 9.91 100.79 10.22 100.79 10.58L100.79 25.13C100.79 25.58 101.15 25.94 101.6 25.94C102.05 25.94 102.42 25.58 102.42 25.13L102.42 13.23L110.79 25.58C110.82 25.63 110.86 25.67 110.9 25.71C110.92 25.73 110.94 25.74 110.95 25.75C110.98 25.78 111.01 25.8 111.05 25.82C111.07 25.83 111.09 25.84 111.1 25.85C111.14 25.87 111.19 25.88 111.23 25.89C111.24 25.9 111.26 25.91 111.27 25.91C111.33 25.92 111.39 25.93 111.45 25.93C111.52 25.93 111.59 25.92 111.66 25.9C111.67 25.89 111.69 25.89 111.71 25.88C111.78 25.86 111.85 25.83 111.9 25.79C111.91 25.79 111.91 25.78 111.91 25.78C111.95 25.75 111.99 25.72 112.02 25.69C112.04 25.67 112.06 25.65 112.08 25.62C112.09 25.6 112.11 25.58 112.13 25.56C112.14 25.54 112.15 25.52 112.17 25.49C112.18 25.47 112.19 25.45 112.2 25.42C112.22 25.4 112.22 25.37 112.23 25.34C112.24 25.32 112.24 25.3 112.25 25.27C112.26 25.22 112.27 25.17 112.27 25.12L112.27 25.12Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M129.18 9.77L117.92 9.77C117.47 9.77 117.1 10.13 117.1 10.58C117.1 11.03 117.47 11.39 117.92 11.39L122.74 11.39L122.74 25.13C122.74 25.58 123.1 25.94 123.55 25.94C124 25.94 124.37 25.58 124.37 25.13L124.37 11.39L129.18 11.39C129.63 11.39 130 11.03 130 10.58C130 10.13 129.63 9.77 129.18 9.77L129.18 9.77Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M39.91 20.1C41.91 19.32 43.34 17.39 43.34 15.12C43.34 12.17 40.93 9.77 37.98 9.77L32.67 9.77C32.22 9.77 31.85 10.14 31.85 10.58L31.85 25.13C31.85 25.58 32.22 25.95 32.67 25.95C33.12 25.95 33.48 25.58 33.48 25.13L33.48 20.47L37.98 20.47C38.05 20.47 38.12 20.46 38.19 20.46L41.85 25.86C42.01 26.1 42.27 26.22 42.53 26.22C42.69 26.22 42.85 26.18 42.98 26.08C43.36 25.83 43.45 25.33 43.2 24.95L39.92 20.11L39.91 20.1ZM33.48 11.39L37.98 11.39C40.03 11.39 41.7 13.06 41.7 15.11C41.7 17.17 40.03 18.84 37.98 18.84L33.48 18.84L33.48 11.39Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M23.18 12.86L1.35 0.12C0.75 -0.23 0 0.21 0 0.91L0 26.4C0 27.11 0.75 27.55 1.35 27.2L23.18 14.45C23.78 14.1 23.78 13.22 23.18 12.86L23.18 12.86Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M2.87 30.3L12.4 35.87C13 36.22 13.76 35.78 13.76 35.08L13.76 23.95C13.76 23.24 13 22.8 12.4 23.15L2.87 28.72C2.27 29.08 2.27 29.96 2.87 30.31L2.87 30.3Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+						</svg>
+					</div>
+
+					<button class="burger-btn">
+						<svg
+							width="36.000000"
+							height="36.000000"
+							viewBox="0 0 36 36"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<defs />
+							<rect
+								id="Icon"
+								rx="17.500000"
+								width="35.000000"
+								height="35.000000"
+								transform="translate(0.500000 0.500002)"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+							/>
+							<path
+								id="Mask"
+								d="M9.94873 12L26.0513 12C26.5737 12 27.0005 12.427 27.0005 12.949L27.0005 13.051C27.0005 13.573 26.5737 14 26.0513 14L9.94873 14C9.42627 14 9.00049 13.573 9.00049 13.051L9.00049 12.949C9.00049 12.427 9.42627 12 9.94873 12ZM26.0513 17L9.94873 17C9.42627 17 9.00049 17.427 9.00049 17.949L9.00049 18.051C9.00049 18.573 9.42627 19 9.94873 19L26.0513 19C26.5737 19 27.0005 18.573 27.0005 18.051L27.0005 17.949C27.0005 17.427 26.5737 17 26.0513 17ZM26.0513 22L9.94873 22C9.42627 22 9.00049 22.427 9.00049 22.949L9.00049 23.051C9.00049 23.573 9.42627 24 9.94873 24L26.0513 24C26.5737 24 27.0005 23.573 27.0005 23.051L27.0005 22.949C27.0005 22.427 26.5737 22 26.0513 22Z"
+								clip-rule="evenodd"
+								fill="#FFFFFF"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+						</svg>
+					</button>
+
+					<div class="burger-menu">
+						<div class="burger-block">
+							<div class="burger-items">
+								<button class="burger-item vacancy">О средстве</button>
+
+								<button class="burger-item">Состав</button>
+								<button class="burger-item">Вопросы</button>
+								<button class="burger-item">Отзывы</button>
+								<button class="burger-item">Попробовать</button>
+								<button class="burger-item">Для своих</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-desc">
+				<div class="logo">
+					<svg
+						width="130.000000"
+						height="36.000000"
+						viewBox="0 0 130 36"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<defs />
+						<path
+							id="Vector"
+							d="M54.25 9.77C49.78 9.77 46.15 13.39 46.15 17.85C46.15 22.32 49.78 25.94 54.25 25.94C58.71 25.94 62.34 22.32 62.34 17.85C62.34 13.39 58.71 9.77 54.25 9.77ZM54.25 24.31C50.68 24.31 47.78 21.42 47.78 17.85C47.78 14.29 50.68 11.39 54.25 11.39C57.81 11.39 60.71 14.29 60.71 17.85C60.71 21.42 57.81 24.31 54.25 24.31Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M88.31 9.77C83.85 9.77 80.22 13.39 80.22 17.85C80.22 22.32 83.85 25.94 88.31 25.94C92.78 25.94 96.41 22.32 96.41 17.85C96.41 13.39 92.78 9.77 88.31 9.77ZM88.31 24.31C84.75 24.31 81.85 21.42 81.85 17.85C81.85 14.29 84.75 11.39 88.31 11.39C91.88 11.39 94.78 14.29 94.78 17.85C94.78 21.42 91.88 24.31 88.31 24.31Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M76.53 10.72C73.45 9.38 69.93 10.04 67.56 12.41C64.4 15.57 64.4 20.7 67.56 23.85C69.11 25.4 71.18 26.22 73.28 26.22C74.31 26.22 75.34 26.03 76.33 25.63C76.75 25.46 76.95 24.99 76.78 24.57C76.61 24.16 76.13 23.95 75.71 24.12C73.3 25.1 70.55 24.54 68.71 22.7C66.19 20.18 66.19 16.09 68.71 13.57C70.61 11.68 73.42 11.14 75.87 12.21C76.28 12.39 76.76 12.2 76.94 11.79C77.12 11.38 76.93 10.9 76.52 10.72L76.53 10.72Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M112.27 25.12L112.27 10.58C112.27 10.13 111.91 9.77 111.46 9.77C111.01 9.77 110.64 10.13 110.64 10.58L110.64 22.47L102.27 10.12C102.08 9.83 101.7 9.7 101.36 9.8C101.02 9.91 100.79 10.22 100.79 10.58L100.79 25.13C100.79 25.58 101.15 25.94 101.6 25.94C102.05 25.94 102.42 25.58 102.42 25.13L102.42 13.23L110.79 25.58C110.82 25.63 110.86 25.67 110.9 25.71C110.92 25.73 110.94 25.74 110.95 25.75C110.98 25.78 111.01 25.8 111.05 25.82C111.07 25.83 111.09 25.84 111.1 25.85C111.14 25.87 111.19 25.88 111.23 25.89C111.24 25.9 111.26 25.91 111.27 25.91C111.33 25.92 111.39 25.93 111.45 25.93C111.52 25.93 111.59 25.92 111.66 25.9C111.67 25.89 111.69 25.89 111.71 25.88C111.78 25.86 111.85 25.83 111.9 25.79C111.91 25.79 111.91 25.78 111.91 25.78C111.95 25.75 111.99 25.72 112.02 25.69C112.04 25.67 112.06 25.65 112.08 25.62C112.09 25.6 112.11 25.58 112.13 25.56C112.14 25.54 112.15 25.52 112.17 25.49C112.18 25.47 112.19 25.45 112.2 25.42C112.22 25.4 112.22 25.37 112.23 25.34C112.24 25.32 112.24 25.3 112.25 25.27C112.26 25.22 112.27 25.17 112.27 25.12L112.27 25.12Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M129.18 9.77L117.92 9.77C117.47 9.77 117.1 10.13 117.1 10.58C117.1 11.03 117.47 11.39 117.92 11.39L122.74 11.39L122.74 25.13C122.74 25.58 123.1 25.94 123.55 25.94C124 25.94 124.37 25.58 124.37 25.13L124.37 11.39L129.18 11.39C129.63 11.39 130 11.03 130 10.58C130 10.13 129.63 9.77 129.18 9.77L129.18 9.77Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M39.91 20.1C41.91 19.32 43.34 17.39 43.34 15.12C43.34 12.17 40.93 9.77 37.98 9.77L32.67 9.77C32.22 9.77 31.85 10.14 31.85 10.58L31.85 25.13C31.85 25.58 32.22 25.95 32.67 25.95C33.12 25.95 33.48 25.58 33.48 25.13L33.48 20.47L37.98 20.47C38.05 20.47 38.12 20.46 38.19 20.46L41.85 25.86C42.01 26.1 42.27 26.22 42.53 26.22C42.69 26.22 42.85 26.18 42.98 26.08C43.36 25.83 43.45 25.33 43.2 24.95L39.92 20.11L39.91 20.1ZM33.48 11.39L37.98 11.39C40.03 11.39 41.7 13.06 41.7 15.11C41.7 17.17 40.03 18.84 37.98 18.84L33.48 18.84L33.48 11.39Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M23.18 12.86L1.35 0.12C0.75 -0.23 0 0.21 0 0.91L0 26.4C0 27.11 0.75 27.55 1.35 27.2L23.18 14.45C23.78 14.1 23.78 13.22 23.18 12.86L23.18 12.86Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M2.87 30.3L12.4 35.87C13 36.22 13.76 35.78 13.76 35.08L13.76 23.95C13.76 23.24 13 22.8 12.4 23.15L2.87 28.72C2.27 29.08 2.27 29.96 2.87 30.31L2.87 30.3Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+					</svg>
+				</div>
+
+				<div class="header-menu-block">
+					<div class="header-menu-items">
+						<a class="contacts-item" href="tel:+73952261260"
+							>+7 (3952) 26-12-60</a
+						>
+
+						<div class="menu-items">
+							<a href="#vacancy-block" class="menu-item vacancy-desc"
+								>Вакансии</a
+							>
+							<a href="#" class="menu-item">Кто мы?</a>
+							<a href="#" class="menu-item">Что мы предлагаем?</a>
+							<a href="#" class="menu-item">Отзывы</a>
+							<a href="#" class="menu-item">Правила</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="main">
+			<div class="main-block">
+				<img class="main-img-phone" src="./img/mainLadyMob.png" alt="lady" />
+
+				<div class="main-block-640">
+					<div class="main-content-block-desc">
+						<div class="main-left-block">
+							<h1 class="main-header-640">Просто потому что можем</h1>
+							<p class="main-description-640">
+								Мы сделали это средство не ради прибыли, а из любви к красивым
+								словам. Один стик в день — и вы чувствуете, что делаете что-то
+								важное. Что именно — решать вам.
+							</p>
+
+							<a href="#form-ancor" class="try-button-desctop"
+								>Попробовать просто так
+								<svg
+									width="48.000000"
+									height="20.000000"
+									viewBox="0 0 48 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<defs>
+										<clipPath id="clip95_5136">
+											<rect
+												id="Frame 14"
+												rx="9.500001"
+												width="19.000002"
+												height="47.000000"
+												transform="translate(48.500000 0.500000) rotate(90.000000)"
+												fill="white"
+												fill-opacity="0"
+											/>
+										</clipPath>
+									</defs>
+									<rect
+										id="Frame 14"
+										rx="9.500001"
+										width="19.000002"
+										height="47.000000"
+										transform="translate(48.500000 0.500000) rotate(90.000000)"
+										fill="#FFFFFF"
+										fill-opacity="1.000000"
+									/>
+									<g clip-path="url(#clip95_5136)">
+										<path
+											id="Vector 2"
+											d="M34 0C34 5.52 38.47 10 44 10"
+											stroke="#1F8B48"
+											stroke-opacity="1.000000"
+											stroke-width="2.000000"
+										/>
+										<path
+											id="Vector 3"
+											d="M33.87 20C33.87 14.47 38.35 10 43.87 10L44 10L-10 10"
+											stroke="#1F8B48"
+											stroke-opacity="1.000000"
+											stroke-width="2.000000"
+										/>
+									</g>
+								</svg>
+							</a>
+						</div>
+
+						<div class="main-right-block">
+							<p class="main-sertificate-640">
+								Сертификат есть. Но это не точно. СГР №AM.01.01 .01.003.R.00 o47
+								4.06.24
+							</p>
+						</div>
+					</div>
+					<div class="main-img-640"></div>
+				</div>
+
+				<div class="main-block-480">
+					<h1 class="main-header-480">Просто потому что можем</h1>
+					<div class="main-img-480"></div>
+				</div>
+
+				<h1 class="main-header">Просто потому что можем с Collagen</h1>
+				<p class="main-description">
+					Мы сделали это средство не ради прибыли, а из любви к красивым словам.
+					Один стик в день — и вы чувствуете, что делаете что-то важное. Что
+					именно — решать вам.
+				</p>
+
+				<a href="#form-ancor" class="try-button"
+					>Попробовать просто так
+					<svg
+						width="48.000000"
+						height="20.000000"
+						viewBox="0 0 48 20"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<defs>
+							<clipPath id="clip95_5136">
+								<rect
+									id="Frame 14"
+									rx="9.500001"
+									width="19.000002"
+									height="47.000000"
+									transform="translate(48.500000 0.500000) rotate(90.000000)"
+									fill="white"
+									fill-opacity="0"
+								/>
+							</clipPath>
+						</defs>
+						<rect
+							id="Frame 14"
+							rx="9.500001"
+							width="19.000002"
+							height="47.000000"
+							transform="translate(48.500000 0.500000) rotate(90.000000)"
+							fill="#FFFFFF"
+							fill-opacity="1.000000"
+						/>
+						<g clip-path="url(#clip95_5136)">
+							<path
+								id="Vector 2"
+								d="M34 0C34 5.52 38.47 10 44 10"
+								stroke="#1F8B48"
+								stroke-opacity="1.000000"
+								stroke-width="2.000000"
+							/>
+							<path
+								id="Vector 3"
+								d="M33.87 20C33.87 14.47 38.35 10 43.87 10L44 10L-10 10"
+								stroke="#1F8B48"
+								stroke-opacity="1.000000"
+								stroke-width="2.000000"
+							/>
+						</g>
+					</svg>
+				</a>
+
+				<p class="main-sertificate">
+					Сертификат есть. Но это не точно. СГР №AM.01.01 .01.003.R.00 o47
+					4.06.24
+				</p>
+			</div>
+		</section>
+
+		<section class="slider">
+			<div class="slider-block">
+				<div class="slider-left-block-desctop">
+					<h3 class="contacts-heading">Это — не совсем то, что вы думаете</h3>
+
+					<div class="slider-buttons">
+						<div class="left-btn">
+							<svg
+								width="48.000000"
+								height="20.000000"
+								viewBox="0 0 48 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+							>
+								<defs>
+									<clipPath id="clip93_223">
+										<rect
+											id="Frame 14"
+											rx="9.500001"
+											width="19.000002"
+											height="47.000000"
+											transform="matrix(4.37114e-08 1 1 -4.37114e-08 0.5 0.5)"
+											fill="white"
+											fill-opacity="0"
+										/>
+									</clipPath>
+								</defs>
+								<rect
+									id="Frame 14"
+									rx="9.500001"
+									width="19.000002"
+									height="47.000000"
+									transform="matrix(4.37114e-08 1 1 -4.37114e-08 0.5 0.5)"
+									fill="#F6F6F6"
+									fill-opacity="1.000000"
+								/>
+								<g clip-path="url(#clip93_223)">
+									<path
+										id="Vector 2"
+										d="M14 0C14 5.52 9.52 10 4 10"
+										stroke="#2E2D2B"
+										stroke-opacity="1.000000"
+										stroke-width="2.000000"
+									/>
+									<path
+										id="Vector 3"
+										d="M14.12 20C14.12 14.47 9.64 10 4.12 10L4 10L58 10"
+										stroke="#2E2D2B"
+										stroke-opacity="1.000000"
+										stroke-width="2.000000"
+									/>
+								</g>
+							</svg>
+						</div>
+
+						<div class="right-btn">
+							<svg
+								width="48.000000"
+								height="20.000000"
+								viewBox="0 0 48 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+							>
+								<defs>
+									<clipPath id="clip93_226">
+										<rect
+											id="Frame 15"
+											rx="9.500001"
+											width="19.000002"
+											height="47.000000"
+											transform="translate(48.500000 0.500000) rotate(90.000000)"
+											fill="white"
+											fill-opacity="0"
+										/>
+									</clipPath>
+								</defs>
+								<rect
+									id="Frame 15"
+									rx="9.500001"
+									width="19.000002"
+									height="47.000000"
+									transform="translate(48.500000 0.500000) rotate(90.000000)"
+									fill="#1F8B48"
+									fill-opacity="1.000000"
+								/>
+								<g clip-path="url(#clip93_226)">
+									<path
+										id="Vector 2"
+										d="M34 0C34 5.52 38.47 10 44 10"
+										stroke="#FFFFFF"
+										stroke-opacity="1.000000"
+										stroke-width="2.000000"
+									/>
+									<path
+										id="Vector 3"
+										d="M33.87 20C33.87 14.47 38.35 10 43.87 10L44 10L-10 10"
+										stroke="#FFFFFF"
+										stroke-opacity="1.000000"
+										stroke-width="2.000000"
+									/>
+								</g>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="slider-track">
+					<div class="slider-card slider-card--lady">
+						<div class="slider-content-block">
+							<p class="slder-heading">Немного упругости</p>
+							<p class="slider-description">
+								Чуть-чуть сияния, и ощущение, что вы о себе позаботились
+							</p>
+						</div>
+					</div>
+
+					<div class="slider-card slider-card--eye">
+						<div class="slider-content-block">
+							<p class="slder-heading">Немного упругости</p>
+							<p class="slider-description">
+								Чуть-чуть сияния, и ощущение, что вы о себе позаботились
+							</p>
+						</div>
+					</div>
+
+					<div class="slider-card slider-card--neck">
+						<div class="slider-content-block">
+							<p class="slder-heading">Немного упругости</p>
+							<p class="slider-description">
+								Чуть-чуть сияния, и ощущение, что вы о себе позаботились
+							</p>
+						</div>
+					</div>
+
+					<div class="slider-card slider-card--eye-face">
+						<div class="slider-content-block">
+							<p class="slder-heading">Немного упругости</p>
+							<p class="slider-description">
+								Чуть-чуть сияния, и ощущение, что вы о себе позаботились
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="form-ancor" class="form">
+			<div class="form-block">
+				<div class="form-block-left">
+					<h3 class="form-heading">Если вы тоже решили «а почему бы и нет»</h3>
+
+					<div class="form-minblock">
+						<div class="form-item">
+							<div class="contact-img">
+								<svg
+									width="24.000000"
+									height="24.000000"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<defs>
+										<clipPath id="clip95_4833">
+											<rect
+												id="Frame 15"
+												rx="11.499999"
+												width="23.000002"
+												height="22.999998"
+												transform="translate(24.500000 0.500000) rotate(90.000000)"
+												fill="white"
+												fill-opacity="0"
+											/>
+										</clipPath>
+									</defs>
+									<rect
+										id="Frame 15"
+										rx="11.499999"
+										width="23.000002"
+										height="22.999998"
+										transform="translate(24.500000 0.500000) rotate(90.000000)"
+										fill="#FFFFFF"
+										fill-opacity="1.000000"
+									/>
+									<g clip-path="url(#clip95_4833)">
+										<path
+											id="Vector 2"
+											d="M12 0C12 6.62 17.37 12 24 12"
+											stroke="#1F8B48"
+											stroke-opacity="1.000000"
+											stroke-width="2.000000"
+										/>
+										<path
+											id="Vector 3"
+											d="M12 24C12 17.37 17.37 12 24 12L-40 12"
+											stroke="#1F8B48"
+											stroke-opacity="1.000000"
+											stroke-width="2.000000"
+										/>
+									</g>
+								</svg>
+							</div>
+
+							<p class="form-description">Можно заказать много</p>
+						</div>
+
+						<div class="form-item">
+							<div class="contact-img">
+								<svg
+									width="24.000000"
+									height="24.000000"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<defs>
+										<clipPath id="clip95_4833">
+											<rect
+												id="Frame 15"
+												rx="11.499999"
+												width="23.000002"
+												height="22.999998"
+												transform="translate(24.500000 0.500000) rotate(90.000000)"
+												fill="white"
+												fill-opacity="0"
+											/>
+										</clipPath>
+									</defs>
+									<rect
+										id="Frame 15"
+										rx="11.499999"
+										width="23.000002"
+										height="22.999998"
+										transform="translate(24.500000 0.500000) rotate(90.000000)"
+										fill="#FFFFFF"
+										fill-opacity="1.000000"
+									/>
+									<g clip-path="url(#clip95_4833)">
+										<path
+											id="Vector 2"
+											d="M12 0C12 6.62 17.37 12 24 12"
+											stroke="#1F8B48"
+											stroke-opacity="1.000000"
+											stroke-width="2.000000"
+										/>
+										<path
+											id="Vector 3"
+											d="M12 24C12 17.37 17.37 12 24 12L-40 12"
+											stroke="#1F8B48"
+											stroke-opacity="1.000000"
+											stroke-width="2.000000"
+										/>
+									</g>
+								</svg>
+							</div>
+
+							<p class="form-description">
+								Доступ возможен через северный интерфейс
+							</p>
+						</div>
+
+						<div class="form-item">
+							<div class="contact-img">
+								<svg
+									width="24.000000"
+									height="24.000000"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<defs>
+										<clipPath id="clip95_4833">
+											<rect
+												id="Frame 15"
+												rx="11.499999"
+												width="23.000002"
+												height="22.999998"
+												transform="translate(24.500000 0.500000) rotate(90.000000)"
+												fill="white"
+												fill-opacity="0"
+											/>
+										</clipPath>
+									</defs>
+									<rect
+										id="Frame 15"
+										rx="11.499999"
+										width="23.000002"
+										height="22.999998"
+										transform="translate(24.500000 0.500000) rotate(90.000000)"
+										fill="#FFFFFF"
+										fill-opacity="1.000000"
+									/>
+									<g clip-path="url(#clip95_4833)">
+										<path
+											id="Vector 2"
+											d="M12 0C12 6.62 17.37 12 24 12"
+											stroke="#1F8B48"
+											stroke-opacity="1.000000"
+											stroke-width="2.000000"
+										/>
+										<path
+											id="Vector 3"
+											d="M12 24C12 17.37 17.37 12 24 12L-40 12"
+											stroke="#1F8B48"
+											stroke-opacity="1.000000"
+											stroke-width="2.000000"
+										/>
+									</g>
+								</svg>
+							</div>
+
+							<p class="form-description">Можно просто поболтать</p>
+						</div>
+					</div>
+				</div>
+
+				<form class="form-data-block" action="#" method="post">
+					<fieldset class="form__fieldset">
+						<div class="form-inputs">
+							<label class="form__label">
+								<span class="visually-hidden">Имя</span>
+								<input
+									class="form__input"
+									type="text"
+									name="name"
+									placeholder="Имя"
+									required
+								/>
+							</label>
+
+							<label class="form__label">
+								<span class="visually-hidden">Телефон</span>
+								<input
+									class="form__input"
+									type="tel"
+									name="phone"
+									placeholder="Телефон"
+									required
+								/>
+							</label>
+						</div>
+
+						<label class="form__checkbox-label">
+							<input
+								class="form__checkbox visually-hidden"
+								type="checkbox"
+								name="agree"
+								required
+							/>
+							<span class="form__custom-checkbox">
+								<svg
+									class="checkbox-bg"
+									width="20"
+									height="20"
+									viewBox="0 0 20.001 20.0017"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M19 10C19 12.12 18.26 14.07 17.03 15.61C15.71 17.26 13.92 18.33 12 18.77C9.93 19.24 7.87 18.96 6.09 18.1C4.18 17.18 2.74 15.67 1.89 13.9C0.97 11.99 0.78 9.91 1.22 7.99C1.69 5.92 2.84 4.19 4.39 2.96C6.04 1.64 8.03 1 10 1"
+										stroke="#FFFFFF"
+										stroke-width="2"
+										stroke-linecap="round"
+									/>
+								</svg>
+
+								<svg
+									class="checkbox-checkmark"
+									width="11"
+									height="9"
+									viewBox="0 0 11 9"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.72 4.97C1.34 4.58 0.7 4.56 0.3 4.94C-0.09 5.32 -0.11 5.96 0.27 6.36L2.49 8.69C2.68 8.88 2.94 8.99 3.21 9L3.22 9C3.49 9 3.75 8.89 3.94 8.69L10.71 1.69C11.1 1.29 11.09 0.66 10.69 0.28C10.29 -0.11 9.66 -0.1 9.28 0.3L3.22 6.55L1.72 4.97Z"
+										fill="#FFFFFF"
+									/>
+								</svg>
+							</span>
+
+							<span class="form__checkbox-text">
+								Согласен(-на) на обработку чего угодно — лишь бы форма работала
+							</span>
+						</label>
+
+						<button class="form__submit" type="submit">
+							<span>Отправить</span>
+							<svg
+								width="48.000000"
+								height="20.000000"
+								viewBox="0 0 48 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+							>
+								<defs>
+									<clipPath id="clip95_4860">
+										<rect
+											id="Frame 14"
+											rx="9.500001"
+											width="19.000002"
+											height="47.000000"
+											transform="translate(48.500000 0.500000) rotate(90.000000)"
+											fill="white"
+											fill-opacity="0"
+										/>
+									</clipPath>
+								</defs>
+								<rect
+									id="Frame 14"
+									rx="9.500001"
+									width="19.000002"
+									height="47.000000"
+									transform="translate(48.500000 0.500000) rotate(90.000000)"
+									fill="#1F8B48"
+									fill-opacity="1.000000"
+								/>
+								<g clip-path="url(#clip95_4860)">
+									<path
+										id="Vector 2"
+										d="M34 0C34 5.52 38.47 10 44 10"
+										stroke="#FFFFFF"
+										stroke-opacity="1.000000"
+										stroke-width="2.000000"
+									/>
+									<path
+										id="Vector 3"
+										d="M33.87 20C33.87 14.47 38.35 10 43.87 10L44 10L-10 10"
+										stroke="#FFFFFF"
+										stroke-opacity="1.000000"
+										stroke-width="2.000000"
+									/>
+								</g>
+							</svg>
+						</button>
+					</fieldset>
+				</form>
+
+				<div class="form-popup" id="form-popup">
+					<p class="form-success">Форма успешно отправлена!</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="info">
+			<div class="info-contacts-block">
+				<h3 class="contacts-heading">Контакты</h3>
+				<div class="contacts-minblock">
+					<div class="contact-item">
+						<div class="contact-img">
+							<svg
+								width="24.000000"
+								height="24.000000"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+							>
+								<defs />
+								<rect
+									id="Icon"
+									rx="11.500000"
+									width="23.000000"
+									height="23.000000"
+									transform="translate(0.500000 0.500000)"
+									fill="#1F8B48"
+									fill-opacity="1.000000"
+								/>
+								<path
+									id="Mask"
+									d="M5.3335 10.2683C5.3335 6.62744 8.32422 3.66663 12 3.66663C15.6758 3.66663 18.667 6.62744 18.667 10.2683C18.667 14.8308 12.7925 19.9175 12.5425 20.1316C12.3862 20.2657 12.1934 20.3333 12 20.3333C11.8066 20.3333 11.6143 20.2657 11.4575 20.1316C11.2075 19.9175 5.3335 14.8308 5.3335 10.2683ZM12 18.3716C10.6045 17.0516 7 13.3458 7 10.2683C7 7.54749 9.24268 5.33325 12 5.33325C14.7578 5.33325 17 7.54749 17 10.2683C17 13.3458 13.396 17.0516 12 18.3716ZM9.0835 9.91626C9.0835 8.30786 10.3916 6.99951 12 6.99951C13.6084 6.99951 14.917 8.30786 14.917 9.91626C14.917 11.5245 13.6084 12.8329 12 12.8329C10.3916 12.8329 9.0835 11.5245 9.0835 9.91626ZM10.75 9.91626C10.75 10.6053 11.311 11.1663 12 11.1663C12.6895 11.1663 13.25 10.6053 13.25 9.91626C13.25 9.22705 12.6895 8.66626 12 8.66626C11.311 8.66626 10.75 9.22705 10.75 9.91626Z"
+									clip-rule="evenodd"
+									fill="#FFFFFF"
+									fill-opacity="1.000000"
+									fill-rule="evenodd"
+								/>
+							</svg>
+						</div>
+
+						<p class="contacts-description">
+							Офис, где делают странные, но симпатичные вещи
+						</p>
+					</div>
+
+					<div class="contact-item">
+						<div class="contact-img">
+							<svg
+								width="24.000000"
+								height="24.000000"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+							>
+								<defs />
+								<rect
+									id="Icon"
+									rx="11.500000"
+									width="23.000000"
+									height="23.000000"
+									transform="translate(0.500000 0.500000)"
+									fill="#1F8B48"
+									fill-opacity="1.000000"
+								/>
+								<path
+									id="Mask"
+									d="M3.6665 12C3.6665 7.40491 7.40479 3.66663 12 3.66663C16.5947 3.66663 20.333 7.40491 20.333 12C20.333 16.595 16.5947 20.3333 12 20.3333C7.40479 20.3333 3.6665 16.595 3.6665 12ZM12 18.6666C8.32422 18.6666 5.33301 15.6758 5.33301 12C5.33301 8.3241 8.32422 5.33325 12 5.33325C15.6758 5.33325 18.6665 8.3241 18.6665 12C18.6665 15.6758 15.6758 18.6666 12 18.6666ZM12.833 11.1666L15.333 11.1666C15.7939 11.1666 16.1665 11.5392 16.1665 12C16.1665 12.4608 15.7939 12.8333 15.333 12.8333L12 12.8333C11.54 12.8333 11.1665 12.4608 11.1665 12L11.1665 8.66663C11.1665 8.20581 11.54 7.83325 12 7.83325C12.46 7.83325 12.833 8.20581 12.833 8.66663L12.833 11.1666Z"
+									clip-rule="evenodd"
+									fill="#FFFFFF"
+									fill-opacity="1.000000"
+									fill-rule="evenodd"
+								/>
+							</svg>
+						</div>
+
+						<p class="contacts-description">Пн-Пт с 10:00 до 20:00</p>
+					</div>
+
+					<div class="contacts-phone-numbers">
+						<div class="contact-item">
+							<div class="contact-img">
+								<svg
+									width="24.000000"
+									height="24.000000"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<defs />
+									<rect
+										id="Icon"
+										rx="11.500000"
+										width="23.000000"
+										height="23.000000"
+										transform="translate(0.500000 0.500000)"
+										fill="#1F8B48"
+										fill-opacity="1.000000"
+									/>
+									<path
+										id="Mask"
+										d="M3.66699 7.5C3.66699 14.5767 9.42383 20.3333 16.5005 20.3333C18.6138 20.3333 20.3335 18.6141 20.3335 16.5C20.3335 16.2849 20.3154 16.0717 20.2803 15.8658C20.2461 15.6566 20.1943 15.4532 20.126 15.2566C20.0327 14.9858 19.8052 14.7825 19.5264 14.7183L14.5552 13.5775C14.2837 13.5175 13.9951 13.5933 13.792 13.7883C13.6738 13.9016 13.6704 13.9049 13.1284 14.9391C11.3535 14.1307 9.89941 12.6816 9.06299 10.87C10.0962 10.3291 10.0986 10.3267 10.2119 10.2083C10.4072 10.005 10.4863 9.71826 10.4229 9.44495L9.28223 4.47498C9.21777 4.19495 9.01367 3.96741 8.74268 3.87329C8.54443 3.80493 8.34131 3.7533 8.13867 3.72083C7.93115 3.68494 7.7168 3.66663 7.50049 3.66663C5.38623 3.66663 3.66699 5.38574 3.66699 7.5ZM7.50049 5.33325C6.30518 5.33325 5.3335 6.30493 5.3335 7.5C5.3335 13.6566 10.3428 18.6666 16.5005 18.6666C17.6943 18.6666 18.667 17.6949 18.667 16.5C18.667 16.4075 18.6611 16.3167 18.6494 16.2267L14.7993 15.3433C14.7227 15.49 14.6387 15.6492 14.562 15.7975L14.5605 15.8002C14.1812 16.5238 13.9062 17.0488 13.2056 16.7666C10.4502 15.7999 8.20117 13.5499 7.22217 10.7616C6.92432 10.1074 7.49121 9.81079 8.20947 9.43579C8.35547 9.35913 8.5127 9.27661 8.65723 9.20166L7.77344 5.35083C7.68115 5.33911 7.59131 5.33325 7.50049 5.33325Z"
+										clip-rule="evenodd"
+										fill="#FFFFFF"
+										fill-opacity="1.000000"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</div>
+
+							<a class="contacts-description" href="tel:+78004444444"
+								>8 (800) 444 44 44</a
+							>
+						</div>
+
+						<div class="contact-item">
+							<div class="contact-img">
+								<svg
+									width="24.000000"
+									height="24.000000"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<defs />
+									<rect
+										id="Icon"
+										rx="11.500000"
+										width="23.000000"
+										height="23.000000"
+										transform="translate(0.500000 0.500000)"
+										fill="#1F8B48"
+										fill-opacity="1.000000"
+									/>
+									<path
+										id="Mask"
+										d="M3.66699 7.5C3.66699 14.5767 9.42383 20.3333 16.5005 20.3333C18.6138 20.3333 20.3335 18.6141 20.3335 16.5C20.3335 16.2849 20.3154 16.0717 20.2803 15.8658C20.2461 15.6566 20.1943 15.4532 20.126 15.2566C20.0327 14.9858 19.8052 14.7825 19.5264 14.7183L14.5552 13.5775C14.2837 13.5175 13.9951 13.5933 13.792 13.7883C13.6738 13.9016 13.6704 13.9049 13.1284 14.9391C11.3535 14.1307 9.89941 12.6816 9.06299 10.87C10.0962 10.3291 10.0986 10.3267 10.2119 10.2083C10.4072 10.005 10.4863 9.71826 10.4229 9.44495L9.28223 4.47498C9.21777 4.19495 9.01367 3.96741 8.74268 3.87329C8.54443 3.80493 8.34131 3.7533 8.13867 3.72083C7.93115 3.68494 7.7168 3.66663 7.50049 3.66663C5.38623 3.66663 3.66699 5.38574 3.66699 7.5ZM7.50049 5.33325C6.30518 5.33325 5.3335 6.30493 5.3335 7.5C5.3335 13.6566 10.3428 18.6666 16.5005 18.6666C17.6943 18.6666 18.667 17.6949 18.667 16.5C18.667 16.4075 18.6611 16.3167 18.6494 16.2267L14.7993 15.3433C14.7227 15.49 14.6387 15.6492 14.562 15.7975L14.5605 15.8002C14.1812 16.5238 13.9062 17.0488 13.2056 16.7666C10.4502 15.7999 8.20117 13.5499 7.22217 10.7616C6.92432 10.1074 7.49121 9.81079 8.20947 9.43579C8.35547 9.35913 8.5127 9.27661 8.65723 9.20166L7.77344 5.35083C7.68115 5.33911 7.59131 5.33325 7.50049 5.33325Z"
+										clip-rule="evenodd"
+										fill="#FFFFFF"
+										fill-opacity="1.000000"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</div>
+
+							<a class="contacts-description" href="tel:+78008888888"
+								>8 (800) 888 88 88</a
+							>
+						</div>
+					</div>
+
+					<div class="contact-item">
+						<div class="contact-img">
+							<svg
+								width="24.000000"
+								height="24.000000"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+							>
+								<defs />
+								<rect
+									id="Icon"
+									rx="11.500000"
+									width="23.000000"
+									height="23.000000"
+									transform="translate(0.500000 0.500000)"
+									fill="#1F8B48"
+									fill-opacity="1.000000"
+								/>
+								<path
+									id="Mask"
+									d="M6.1665 5.33325L17.833 5.33325C19.2114 5.33325 20.333 6.45496 20.333 7.83325L20.333 16.1666C20.333 17.5449 19.2114 18.6666 17.833 18.6666L6.1665 18.6666C4.78809 18.6666 3.6665 17.5449 3.6665 16.1666L3.6665 7.83325C3.6665 6.45496 4.78809 5.33325 6.1665 5.33325ZM17.2773 6.99988L12 10.9583L6.72217 6.99988L17.2773 6.99988ZM17.833 16.9999C18.2925 16.9999 18.6665 16.6266 18.6665 16.1666L18.6665 8.04163L12.5 12.6666C12.3516 12.7782 12.1758 12.8333 12 12.8333C11.8242 12.8333 11.6479 12.7782 11.5 12.6666L5.33301 8.04163L5.33301 16.1666C5.33301 16.6266 5.70752 16.9999 6.1665 16.9999L17.833 16.9999Z"
+									clip-rule="evenodd"
+									fill="#FFFFFF"
+									fill-opacity="1.000000"
+									fill-rule="evenodd"
+								/>
+							</svg>
+						</div>
+
+						<a class="contacts-description" href="mailto:example@mail.ru"
+							>example@mail.ru</a
+						>
+					</div>
+				</div>
+
+				<button class="contact-button">
+					Связться
+					<div>
+						<svg
+							width="48.000000"
+							height="20.000000"
+							viewBox="0 0 48 20"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<defs>
+								<clipPath id="clip95_4939">
+									<rect
+										id="Frame 14"
+										rx="9.500001"
+										width="19.000002"
+										height="47.000000"
+										transform="translate(48.500000 0.500000) rotate(90.000000)"
+										fill="white"
+										fill-opacity="0"
+									/>
+								</clipPath>
+							</defs>
+							<rect
+								id="Frame 14"
+								rx="9.500001"
+								width="19.000002"
+								height="47.000000"
+								transform="translate(48.500000 0.500000) rotate(90.000000)"
+								fill="#FFFFFF"
+								fill-opacity="1.000000"
+							/>
+							<g clip-path="url(#clip95_4939)">
+								<path
+									id="Vector 2"
+									d="M34 0C34 5.52 38.47 10 44 10"
+									stroke="#1F8B48"
+									stroke-opacity="1.000000"
+									stroke-width="2.000000"
+								/>
+								<path
+									id="Vector 3"
+									d="M33.87 20C33.87 14.47 38.35 10 43.87 10L44 10L-10 10"
+									stroke="#1F8B48"
+									stroke-opacity="1.000000"
+									stroke-width="2.000000"
+								/>
+							</g>
+						</svg>
+					</div>
+				</button>
+			</div>
+
+			<div class="contacts-map">
+				<script
+					type="text/javascript"
+					charset="utf-8"
+					async
+					src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=mymaps%3AppDvNJBT-vXFybiKTB3uLDhkWH4A1cjU&amp;width=1200&amp;height=435&amp;lang=ru_RU&amp;scroll=true"
+				></script>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-mob">
+				<div class="logo-mob">
+					<svg
+						width="130.000000"
+						height="36.000000"
+						viewBox="0 0 130 36"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<defs />
+						<path
+							id="Vector"
+							d="M54.25 9.77C49.78 9.77 46.15 13.39 46.15 17.85C46.15 22.32 49.78 25.94 54.25 25.94C58.71 25.94 62.34 22.32 62.34 17.85C62.34 13.39 58.71 9.77 54.25 9.77ZM54.25 24.31C50.68 24.31 47.78 21.42 47.78 17.85C47.78 14.29 50.68 11.39 54.25 11.39C57.81 11.39 60.71 14.29 60.71 17.85C60.71 21.42 57.81 24.31 54.25 24.31Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M88.31 9.77C83.85 9.77 80.22 13.39 80.22 17.85C80.22 22.32 83.85 25.94 88.31 25.94C92.78 25.94 96.41 22.32 96.41 17.85C96.41 13.39 92.78 9.77 88.31 9.77ZM88.31 24.31C84.75 24.31 81.85 21.42 81.85 17.85C81.85 14.29 84.75 11.39 88.31 11.39C91.88 11.39 94.78 14.29 94.78 17.85C94.78 21.42 91.88 24.31 88.31 24.31Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M76.53 10.72C73.45 9.38 69.93 10.04 67.56 12.41C64.4 15.57 64.4 20.7 67.56 23.85C69.11 25.4 71.18 26.22 73.28 26.22C74.31 26.22 75.34 26.03 76.33 25.63C76.75 25.46 76.95 24.99 76.78 24.57C76.61 24.16 76.13 23.95 75.71 24.12C73.3 25.1 70.55 24.54 68.71 22.7C66.19 20.18 66.19 16.09 68.71 13.57C70.61 11.68 73.42 11.14 75.87 12.21C76.28 12.39 76.76 12.21 76.94 11.79C77.12 11.38 76.93 10.9 76.52 10.72L76.53 10.72Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M112.27 25.12L112.27 10.58C112.27 10.13 111.91 9.77 111.46 9.77C111.01 9.77 110.64 10.13 110.64 10.58L110.64 22.47L102.27 10.12C102.08 9.83 101.7 9.7 101.36 9.8C101.02 9.91 100.79 10.22 100.79 10.58L100.79 25.13C100.79 25.58 101.15 25.94 101.6 25.94C102.05 25.94 102.42 25.58 102.42 25.13L102.42 13.23L110.79 25.58C110.82 25.63 110.86 25.67 110.9 25.71C110.92 25.73 110.94 25.74 110.95 25.75C110.98 25.78 111.01 25.8 111.05 25.82C111.07 25.83 111.09 25.84 111.1 25.85C111.14 25.87 111.19 25.88 111.23 25.89C111.24 25.9 111.26 25.91 111.27 25.91C111.33 25.92 111.39 25.93 111.45 25.93C111.52 25.93 111.59 25.92 111.66 25.9C111.67 25.89 111.69 25.89 111.71 25.88C111.78 25.86 111.85 25.83 111.9 25.79C111.91 25.79 111.91 25.78 111.91 25.78C111.95 25.75 111.99 25.72 112.02 25.69C112.04 25.67 112.06 25.65 112.08 25.62C112.09 25.6 112.11 25.58 112.13 25.56C112.14 25.54 112.15 25.52 112.17 25.49C112.18 25.47 112.19 25.45 112.2 25.42C112.22 25.4 112.22 25.37 112.23 25.34C112.24 25.32 112.24 25.3 112.25 25.27C112.26 25.22 112.27 25.17 112.27 25.12L112.27 25.12Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M129.18 9.77L117.92 9.77C117.47 9.77 117.1 10.13 117.1 10.58C117.1 11.03 117.47 11.39 117.92 11.39L122.74 11.39L122.74 25.13C122.74 25.58 123.1 25.94 123.55 25.94C124 25.94 124.37 25.58 124.37 25.13L124.37 11.39L129.18 11.39C129.63 11.39 130 11.03 130 10.58C130 10.13 129.63 9.77 129.18 9.77L129.18 9.77Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M39.91 20.1C41.91 19.32 43.34 17.39 43.34 15.12C43.34 12.17 40.93 9.77 37.98 9.77L32.67 9.77C32.22 9.77 31.85 10.14 31.85 10.58L31.85 25.13C31.85 25.58 32.22 25.95 32.67 25.95C33.12 25.95 33.48 25.58 33.48 25.13L33.48 20.47L37.98 20.47C38.05 20.47 38.12 20.46 38.19 20.46L41.85 25.86C42.01 26.1 42.27 26.22 42.53 26.22C42.69 26.22 42.85 26.18 42.98 26.08C43.36 25.83 43.45 25.33 43.2 24.95L39.92 20.11L39.91 20.1ZM33.48 11.39L37.98 11.39C40.03 11.39 41.7 13.06 41.7 15.11C41.7 17.17 40.03 18.84 37.98 18.84L33.48 18.84L33.48 11.39Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M23.18 12.86L1.35 0.12C0.75 -0.23 0 0.21 0 0.91L0 26.4C0 27.11 0.75 27.55 1.35 27.2L23.18 14.45C23.78 14.1 23.78 13.22 23.18 12.86L23.18 12.86Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+						<path
+							id="Vector"
+							d="M2.87 30.3L12.4 35.87C13 36.22 13.76 35.78 13.76 35.08L13.76 23.95C13.76 23.24 13 22.8 12.4 23.15L2.87 28.72C2.27 29.08 2.27 29.96 2.87 30.31L2.87 30.3Z"
+							fill="#1F8B48"
+							fill-opacity="1.000000"
+							fill-rule="evenodd"
+						/>
+					</svg>
+				</div>
+
+				<div class="footer-qa-block">
+					<a class="footer-text" href="#">О системе</a>
+					<a class="footer-text" href="#">Архитектура</a>
+					<a class="footer-text" href="#">Вопросы</a>
+					<a class="footer-text" href="#">Отзывы</a>
+					<a class="footer-text" href="#">Для своих</a>
+				</div>
+
+				<div class="underline"></div>
+
+				<div class="footer-contacts-desc">
+					<div class="logo-desc">
+						<svg
+							width="130.000000"
+							height="36.000000"
+							viewBox="0 0 130 36"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<defs />
+							<path
+								id="Vector"
+								d="M54.25 9.77C49.78 9.77 46.15 13.39 46.15 17.85C46.15 22.32 49.78 25.94 54.25 25.94C58.71 25.94 62.34 22.32 62.34 17.85C62.34 13.39 58.71 9.77 54.25 9.77ZM54.25 24.31C50.68 24.31 47.78 21.42 47.78 17.85C47.78 14.29 50.68 11.39 54.25 11.39C57.81 11.39 60.71 14.29 60.71 17.85C60.71 21.42 57.81 24.31 54.25 24.31Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M88.31 9.77C83.85 9.77 80.22 13.39 80.22 17.85C80.22 22.32 83.85 25.94 88.31 25.94C92.78 25.94 96.41 22.32 96.41 17.85C96.41 13.39 92.78 9.77 88.31 9.77ZM88.31 24.31C84.75 24.31 81.85 21.42 81.85 17.85C81.85 14.29 84.75 11.39 88.31 11.39C91.88 11.39 94.78 14.29 94.78 17.85C94.78 21.42 91.88 24.31 88.31 24.31Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M76.53 10.72C73.45 9.38 69.93 10.04 67.56 12.41C64.4 15.57 64.4 20.7 67.56 23.85C69.11 25.4 71.18 26.22 73.28 26.22C74.31 26.22 75.34 26.03 76.33 25.63C76.75 25.46 76.95 24.99 76.78 24.57C76.61 24.16 76.13 23.95 75.71 24.12C73.3 25.1 70.55 24.54 68.71 22.7C66.19 20.18 66.19 16.09 68.71 13.57C70.61 11.68 73.42 11.14 75.87 12.21C76.28 12.39 76.76 12.21 76.94 11.79C77.12 11.38 76.93 10.9 76.52 10.72L76.53 10.72Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M112.27 25.12L112.27 10.58C112.27 10.13 111.91 9.77 111.46 9.77C111.01 9.77 110.64 10.13 110.64 10.58L110.64 22.47L102.27 10.12C102.08 9.83 101.7 9.7 101.36 9.8C101.02 9.91 100.79 10.22 100.79 10.58L100.79 25.13C100.79 25.58 101.15 25.94 101.6 25.94C102.05 25.94 102.42 25.58 102.42 25.13L102.42 13.23L110.79 25.58C110.82 25.63 110.86 25.67 110.9 25.71C110.92 25.73 110.94 25.74 110.95 25.75C110.98 25.78 111.01 25.8 111.05 25.82C111.07 25.83 111.09 25.84 111.1 25.85C111.14 25.87 111.19 25.88 111.23 25.89C111.24 25.9 111.26 25.91 111.27 25.91C111.33 25.92 111.39 25.93 111.45 25.93C111.52 25.93 111.59 25.92 111.66 25.9C111.67 25.89 111.69 25.89 111.71 25.88C111.78 25.86 111.85 25.83 111.9 25.79C111.91 25.79 111.91 25.78 111.91 25.78C111.95 25.75 111.99 25.72 112.02 25.69C112.04 25.67 112.06 25.65 112.08 25.62C112.09 25.6 112.11 25.58 112.13 25.56C112.14 25.54 112.15 25.52 112.17 25.49C112.18 25.47 112.19 25.45 112.2 25.42C112.22 25.4 112.22 25.37 112.23 25.34C112.24 25.32 112.24 25.3 112.25 25.27C112.26 25.22 112.27 25.17 112.27 25.12L112.27 25.12Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M129.18 9.77L117.92 9.77C117.47 9.77 117.1 10.13 117.1 10.58C117.1 11.03 117.47 11.39 117.92 11.39L122.74 11.39L122.74 25.13C122.74 25.58 123.1 25.94 123.55 25.94C124 25.94 124.37 25.58 124.37 25.13L124.37 11.39L129.18 11.39C129.63 11.39 130 11.03 130 10.58C130 10.13 129.63 9.77 129.18 9.77L129.18 9.77Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M39.91 20.1C41.91 19.32 43.34 17.39 43.34 15.12C43.34 12.17 40.93 9.77 37.98 9.77L32.67 9.77C32.22 9.77 31.85 10.14 31.85 10.58L31.85 25.13C31.85 25.58 32.22 25.95 32.67 25.95C33.12 25.95 33.48 25.58 33.48 25.13L33.48 20.47L37.98 20.47C38.05 20.47 38.12 20.46 38.19 20.46L41.85 25.86C42.01 26.1 42.27 26.22 42.53 26.22C42.69 26.22 42.85 26.18 42.98 26.08C43.36 25.83 43.45 25.33 43.2 24.95L39.92 20.11L39.91 20.1ZM33.48 11.39L37.98 11.39C40.03 11.39 41.7 13.06 41.7 15.11C41.7 17.17 40.03 18.84 37.98 18.84L33.48 18.84L33.48 11.39Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M23.18 12.86L1.35 0.12C0.75 -0.23 0 0.21 0 0.91L0 26.4C0 27.11 0.75 27.55 1.35 27.2L23.18 14.45C23.78 14.1 23.78 13.22 23.18 12.86L23.18 12.86Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+							<path
+								id="Vector"
+								d="M2.87 30.3L12.4 35.87C13 36.22 13.76 35.78 13.76 35.08L13.76 23.95C13.76 23.24 13 22.8 12.4 23.15L2.87 28.72C2.27 29.08 2.27 29.96 2.87 30.31L2.87 30.3Z"
+								fill="#1F8B48"
+								fill-opacity="1.000000"
+								fill-rule="evenodd"
+							/>
+						</svg>
+					</div>
+
+					<div class="footer-politic">
+						<p class="footer-text">Коллаген © 2025</p>
+						<a class="footer-text" href="#"
+							>Политика обработки чего-то личного</a
+						>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+@media (min-width: 1200px) {
+	.footer-mob {
+		padding: 32px 120px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.info {
+		padding: 96px 120px 0 120px;
+	}
+
+	.contacts-map {
+		height: 359px;
+	}
+
+	.contact-button {
+		width: 176px;
+	}
+
+	.form-block {
+		gap: 64px;
+		padding: 64px 86px 64px 64px;
+	}
+
+	.form {
+		padding: 96px 120px 0 120px;
+	}
+
+	.form-data-block {
+		width: 100%;
+	}
+
+	.form-block-left {
+		width: 100%;
+	}
+
+	.slider-card {
+		height: 450px;
+		width: 300px;
+	}
+
+	.contacts-heading {
+		width: 236px;
+	}
+
+	.try-button-desctop {
+		width: 327px;
+		height: 52px;
+	}
+
+	.main-sertificate-640 {
+		font-size: 16px;
+	}
+}

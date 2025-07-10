@@ -1,0 +1,68 @@
+@media (min-width: 480px) {
+  .footer-qa-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    justify-items: start;
+    gap: 32px 64px;
+    white-space: nowrap;
+  }
+  .contact-button {
+    width: 167px;
+    height: 52px;
+  }
+  .contacts-phone-numbers {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .contacts-map {
+    height: 220px;
+  }
+  .form-inputs {
+    display: flex;
+    flex-direction: row;
+  }
+  .form__label {
+    width: 100%;
+  }
+  .form__submit {
+    width: 181px;
+  }
+  .main-header {
+    display: none;
+  }
+  .try-button {
+    width: 302px;
+  }
+  .main-img-phone {
+    display: none;
+  }
+  .main-img-480 {
+    display: flex;
+  }
+  .main-header-480 {
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    position: absolute;
+    width: 237px;
+    padding: 32px;
+    font-size: 32px;
+  }
+  .main-block-480 {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 24px;
+  }
+  .main-img-480 {
+    background-image: url("../img/mainLady640.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    width: 100%;
+    height: 197px;
+  }
+  .main-sertificate {
+    display: flex;
+  }
+}/*# sourceMappingURL=media480.css.map */
