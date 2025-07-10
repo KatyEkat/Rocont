@@ -6,6 +6,11 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+	background: rgb(246, 246, 246);
+}
+
 body {
 	background-image: url("./img/TopographicBGR.png");
 	background-repeat: no-repeat;
@@ -15,48 +20,7 @@ body {
 	min-height: 100vh;
 	width: 100%;
 	overflow-x: hidden;
-	// background: rgb(246, 246, 246);
 }
-
-// .header {
-// 	padding: 16px;
-// 	background: transparent;
-
-// 	&__container {
-// 		display: flex;
-// 		justify-content: space-between;
-// 		align-items: center;
-// 	}
-
-// 	&-nav {
-// 		display: none;
-
-// 		&-mobile {
-// 			display: none;
-// 		}
-// 	}
-
-// 	&__burger {
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: space-between;
-// 		width: 24px;
-// 		height: 18px;
-// 		background: none;
-// 		border: none;
-// 		cursor: pointer;
-
-// 		span {
-// 			height: 2px;
-// 			background: #000;
-// 			width: 100%;
-// 		}
-// 	}
-// }
-
-// .nav--visible {
-// 	display: block !important;
-// }
 
 .header {
 	display: flex;
@@ -81,7 +45,7 @@ body {
 }
 
 .burger-menu {
-	display: none;
+	// display: none;
 	justify-content: space-between;
 	width: 100%;
 	height: 100vh;
@@ -103,6 +67,7 @@ body {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
+	z-index: 2;
 }
 
 .burger-block {
@@ -118,11 +83,13 @@ body {
 }
 
 .burger-item {
-	color: rgb(53, 41, 88);
-	font-family: "Panton";
+	color: rgb(46, 45, 43);
+	font-family: "Tilda";
 	font-size: 16px;
-	font-weight: 400;
-	line-height: 19px;
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: 0%;
+	text-align: left;
 	text-align: center;
 	background: unset;
 	border: unset;
@@ -179,11 +146,12 @@ body {
 	text-decoration: none;
 }
 
-//////////////////////////////////////////////////////////////
-///
+.main-description-1200 {
+	display: none;
+}
 
 .main {
-	padding: 64px 10px 0 10px;
+	padding: 0 10px;
 }
 
 .main-block {
@@ -257,26 +225,17 @@ body {
 	text-align: center;
 }
 
-.main-img-480{
-    display: none;
+.main-img-480 {
+	display: none;
 }
 
-.main-block-480{
-    display: none;
+.main-block-480 {
+	display: none;
 }
 
-.main-block-640{
-    display: none;
+.main-block-640 {
+	display: none;
 }
-
-// .main-text-block {
-// 	display: flex;
-// 	flex-direction: column;
-// 	gap: 24px;
-// }
-
-//////////////////////////////////////////////////////////////
-///
 
 .slider {
 	padding: 64px 10px 0 10px;
@@ -306,13 +265,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-blend-mode: overlay;
-
-	background-image: linear-gradient(
-		180deg,
-		rgba(31, 139, 72, 0) 31.304%,
-		rgba(31, 139, 72, 1) 100%
-	);
 }
 
 .slider-card--lady {

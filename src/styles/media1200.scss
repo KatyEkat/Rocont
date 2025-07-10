@@ -26,6 +26,14 @@
 		padding: 96px 120px 0 120px;
 	}
 
+	.main {
+		padding: 0 120px;
+	}
+
+	.slider {
+		padding: 96px 0px 0 120px;
+	}
+
 	.form-data-block {
 		width: 100%;
 	}
@@ -50,5 +58,62 @@
 
 	.main-sertificate-640 {
 		font-size: 16px;
+	}
+
+	.main-content-block-desc {
+		padding: 64px;
+	}
+
+	.menu-items {
+		gap: 32px;
+	}
+
+	.try-button-desctop {
+		width: 327px;
+	}
+
+	.main-block-640 {
+		height: 461px;
+	}
+
+	.main-left-block {
+		gap: 32px;
+	}
+
+	.main-header-640 {
+		font-size: 64px;
+		width: 512px;
+	}
+
+	.main-description-640 {
+		width: 426px;
+		font-size: 21px;
+	}
+
+	.main-sertificate-640 {
+		width: 278px;
+	}
+
+	.main-sertificate-640 br {
+		display: none;
+	}
+
+	.header-desc {
+		padding: 8px 120px;
+	}
+	.main-description-640 {
+		display: none;
+	}
+
+	.main-description-1200 {
+		display: flex;
+		color: rgb(255, 255, 255);
+		font-family: "Tilda";
+		font-size: 21px;
+		font-weight: 500;
+		line-height: 140%;
+		letter-spacing: -3%;
+		text-align: left;
+		width: 426px;
 	}
 }

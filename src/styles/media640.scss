@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 640px) {
 	.header__burger {
 		display: none;
 	}
@@ -68,7 +68,7 @@
 		letter-spacing: 0%;
 		text-align: left;
 
-		width: 100%;
+		width: 302px;
 		height: 52px;
 
 		border: unset;
@@ -89,13 +89,14 @@
 	}
 
 	.main-description-640 {
-		color: rgb(46, 45, 43);
+		color: rgb(255, 255, 255);
 		font-family: "Tilda";
 		font-size: 18px;
 		font-weight: 500;
 		line-height: 120%;
 		letter-spacing: -3%;
 		text-align: left;
+		width: 337px;
 	}
 
 	.main-description,
@@ -133,6 +134,14 @@
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
+		align-items: flex-end;
+		padding: 24px;
+		height: 100%;
+	}
+
+	.main-right-block {
+		display: flex;
+		justify-content: flex-end;
 		align-items: flex-end;
 	}
 }

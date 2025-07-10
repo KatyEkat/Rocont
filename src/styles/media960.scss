@@ -119,4 +119,86 @@
 	.slider-card:not(:first-child) .slider-content-block {
 		display: none;
 	}
+
+	.main-content-block-desc {
+		padding: 48px;
+	}
+
+	.header-mob {
+		display: none;
+	}
+
+	.header-desc {
+		display: flex;
+		padding: 8px 10px;
+		// justify-content: space-between;
+		// border-radius: 24px;
+		// background: rgb(255, 255, 255);
+	}
+
+	.header-desc-bllock {
+		display: flex;
+		justify-content: space-between;
+		border-radius: 24px;
+		background: rgb(255, 255, 255);
+		width: 100%;
+		align-items: center;
+		box-shadow: 2px -1px 20px #c0c0c0;
+		height: 68px;
+		padding: 16px 36px;
+	}
+
+	.menu-item {
+		color: rgb(46, 45, 43);
+		font-family: "Tilda";
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 110%;
+		letter-spacing: 0%;
+		text-align: left;
+		text-decoration: none;
+	}
+
+	.menu-items {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 24px;
+	}
+
+	.item-try {
+		color: rgb(255, 255, 255);
+		font-family: "Tilda";
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 110%;
+		letter-spacing: 0%;
+		text-align: left;
+
+		border-radius: 40px;
+		background: rgb(31, 139, 72);
+
+		width: 127px;
+		height: 27px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.header-menu-block {
+		display: flex;
+		align-items: center;
+	}
+
+	.try-button-desctop {
+		width: 302px;
+	}
+
+	.main-block-640 {
+		height: 353px;
+	}
+
+	.main-description-640 {
+		width: 426px;
+	}
 }

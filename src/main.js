@@ -1,15 +1,7 @@
-// const burger = document.querySelector(".header__burger");
-// const mobileNav = document.querySelector(".header-nav-mobile");
-
-// burger.addEventListener("click", () => {
-//   mobileNav.classList.toggle("nav--visible");
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
 	const burgerMenuBtn = document.querySelector(".burger-btn");
 	const burgerMenu = document.querySelector(".burger-menu");
 	const burgerBlock = document.querySelector(".burger-block");
-	const burgerContacts = document.querySelector(".burger-menu");
 
 	burgerMenuBtn.addEventListener("click", () => {
 		burgerMenu.classList.toggle("show-items");
@@ -22,31 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
 		const isMenuOpen = burgerMenu.classList.contains("show-items");
 
 		const clickInsideMenu =
-			burgerBlock.contains(e.target) ||
-			burgerContacts.contains(e.target) ||
-			burgerMenuBtn.contains(e.target);
+			burgerBlock.contains(e.target) || burgerMenuBtn.contains(e.target);
 
 		if (isMenuOpen && !clickInsideMenu) {
 			burgerMenu.classList.remove("show-items");
 			document.body.style.overflow = "auto";
 		}
 	});
-
-	// const anchorLinks = document.querySelectorAll('.burger-menu a[href^="#"]');
-
-	// anchorLinks.forEach((link) => {
-	// 	link.addEventListener("click", () => {
-	// 		if (burgerMenu.classList.contains("show-items")) {
-	// 			burgerMenu.classList.remove("show-items");
-	// 			setTimeout(() => {
-	// 				document.body.style.overflow = "auto";
-	// 			}, 200);
-	// 		}
-	// 	});
-	// });
-
-
-  // Слайдер
 
 	const leftBtn = document.querySelector(".left-btn");
 	const rightBtn = document.querySelector(".right-btn");
@@ -93,9 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			slide(diffX > 0 ? "left" : "right");
 		}
 	});
-
-
-	// отправка формы и очистка
 
 	const form = document.querySelector(".form-data-block");
 	const popup = document.getElementById("form-popup");
