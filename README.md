@@ -12,7 +12,7 @@ HTML, SCSS (CSS), JavaScript, Vite,
 
 ## Project link
 
-https://rocont-green.vercel.app/#form-ancor
+https://rocont-green.vercel.app
 
 ## Instructions for launching the project
 
