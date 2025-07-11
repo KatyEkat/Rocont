@@ -12,8 +12,7 @@ HTML, SCSS (CSS), JavaScript, Vite,
 
 ## Project link
 
-
-
+https://rocont-green.vercel.app/#form-ancor
 
 ## Instructions for launching the project
 
@@ -31,10 +30,10 @@ HTML, SCSS (CSS), JavaScript, Vite,
 
 4. Start proj via command
 
-###  `npm run preview`
+### `npm run preview`
 
 5. Open http://localhost:4173/ and enjoy
-6. 
+6.
 
 ### Contacts for communication on all issues
 
