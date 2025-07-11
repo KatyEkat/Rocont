@@ -163,4 +163,14 @@
   .main-description-640 {
     width: 426px;
   }
+  .desc {
+    display: none;
+  }
+  .mob {
+    display: flex;
+  }
+  .main-sertificate-640 {
+    width: 278px;
+    text-align: end;
+  }
 }/*# sourceMappingURL=media960.css.map */

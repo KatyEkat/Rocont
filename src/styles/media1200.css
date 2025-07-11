@@ -72,7 +72,7 @@
   .main-sertificate-640 {
     width: 278px;
   }
-  .main-sertificate-640 br {
+  .desc {
     display: none;
   }
   .header-desc {
@@ -91,5 +91,12 @@
     letter-spacing: -3%;
     text-align: left;
     width: 426px;
+  }
+  .contacts-description {
+    font-size: 21px;
+  }
+  .main-sertificate-640 {
+    width: 315px;
+    text-align: end;
   }
 }/*# sourceMappingURL=media1200.css.map */
