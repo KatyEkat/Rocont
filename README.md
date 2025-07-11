@@ -33,7 +33,7 @@ https://rocont-green.vercel.app
 ### `npm run preview`
 
 5. Open http://localhost:4173/ and enjoy
-6.
+
 
 ### Contacts for communication on all issues
 
